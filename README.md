@@ -1,24 +1,16 @@
-# README
+# Book Goals
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Summary 
 
-Things you may want to cover:
+Book Goals is a forum site built with Ruby on Rails designed specifically for your friendly local book club. 
 
-* Ruby version
+## Tech
 
-* System dependencies
+Technologies Used Include: Ruby, Rails, HAML, SCSS, Devise, Font-Awesome, Google Books API, Simple Form, Bootstrap, and more...
 
-* Configuration
 
-* Database creation
+## Usage
+Stay tuned for usage examples
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Author
+Created and Maintained by Lizzie Turner [twitter](twitter.com/iamlizzieturner) // [email](mailto:hello@lizzieturner.com)
