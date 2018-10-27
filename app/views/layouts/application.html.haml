@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %title Book Goals
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    %link{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Lato", type: "text/css" }
+    %link{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Pacifico", type: "text/css" }
+    %link{ :rel => 'stylesheet', :href => '//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css', :type => 'text/css' }
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tags
+
+  %body
+    %header.main_header.clearfix
+      .wrapper
+        #logo
+          %p= link_to "Book Goals", root_path
+        #buttons
+          - if user_signed_in?
+            = link_to "New Post", new_post_path
+          - else
+            = link_to "Login", new_user_session_path
+            = link_to "Sign Up", new_user_registration_path
+          
+
+    .wrapper
+      %p.notice= notice
+      %p.alert= alert
+
+    .wrapper
+      = yield
+
+%tail
+  %p © Lizzie Turner. All Rights Reserved.
