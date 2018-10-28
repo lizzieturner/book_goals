@@ -7,7 +7,6 @@ Book Goals is a forum site built with Ruby on Rails designed specifically for yo
 ![home page](/app/assets/images/index.png)
 
 ## Tech
-
 ![stack](/app/assets/images/stack.png)
 
 Gems Installed Include: Devise, HAML, SCSS, PG, and Simple Form
@@ -28,6 +27,6 @@ Then create a new thread using the "Create Thread" button or read an existing th
 Created and Maintained by Lizzie Turner [twitter](twitter.com/iamlizzieturner) // [email](mailto:hello@lizzieturner.com)
 
 ## Acknowledgements
-Book Goals owes much debt to the tutorial "How to Build a Forum in Ruby".
+Book Goals owes much debt to the tutorial "How to Build a Forum in Rails 4" by Mackenzie Child.
 
 
