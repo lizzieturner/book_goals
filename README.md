@@ -2,7 +2,7 @@
 
 # Book Goals
 
-(/images/logo.png)
+!(/images/logo.png)
 
 ## Summary 
 
