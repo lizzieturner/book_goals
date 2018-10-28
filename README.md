@@ -1,7 +1,3 @@
-
-
-# Book Goals
-
 ![book goals log](logo.png)
 
 ## Summary 
@@ -18,8 +14,11 @@ Currently, Book Goals supports multi-user threading with various posts and comme
 
 To use Book Goals, first sign in:
 
+![sign in](app/assets/images/sign_in)
 
 Then create a new thread using the "Create Thread" button or read an existing thread by clicking on the title.
+
+![sample post](/app/assets/images/this_month.png)
 
 ## Author
 Created and Maintained by Lizzie Turner [twitter](twitter.com/iamlizzieturner) // [email](mailto:hello@lizzieturner.com)
