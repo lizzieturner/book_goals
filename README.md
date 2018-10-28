@@ -1,4 +1,4 @@
-![book goals log](logo.png)
+![book goals log](/app/assets/images/logo.png)
 
 ## Summary 
 
