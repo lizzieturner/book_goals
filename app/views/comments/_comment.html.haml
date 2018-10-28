@@ -2,10 +2,10 @@
 	.content
 		%p.comment_content= comment.comment
 		%p.comment_info
-		= comment.user.email
-		| 
-		= time_ago_in_words(comment.updated_at)
-		ago
+			= comment.user.email
+			| 
+			= time_ago_in_words(comment.updated_at)
+			ago
 	.buttons
 		= link_to "Edit", edit_post_comment_path(comment.post, comment)
 		= link_to "Delete", [comment.post, comment], method: :delete, data: { confirm: "Are you sure?" }
