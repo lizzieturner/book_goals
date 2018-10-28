@@ -11,23 +11,36 @@
 
   %body
     %header.main_header.clearfix
-      .wrapper
+      #header_div
         #logo
           %p= link_to "Book Goals", root_path
         #buttons
           - if user_signed_in?
-            = link_to "New Post", new_post_path
+            = link_to "Start a New Thread", new_post_path
+            &nbsp
+            &nbsp
+            &nbsp
+            = link_to "Vote for Next Month", post_path('1')
           - else
             = link_to "Login", new_user_session_path
+            &nbsp
+            &nbsp
             = link_to "Sign Up", new_user_registration_path
           
+    #body_div 
+      #posts
+        %p.notice= notice
+        %p.alert= alert
+        = yield
 
-    .wrapper
-      %p.notice= notice
-      %p.alert= alert
+      #books
+        %h2 This Month's Selection 
+        %br/
 
-    .wrapper
-      = yield
+        %img{ :src => image_path('it_cover.jpg') }
+        %br/
+        %br/
+        %h3 "It" by Stephen King
 
 %tail
-  %p © Lizzie Turner. All Rights Reserved.
+  %p © Lizzie Turner 10/28/2018.

@@ -3,14 +3,36 @@
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #c3bbbb;
-}
-
-.wrapper {
-	width: 60%;
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: auto;
-	margin: 25px;
+	#header_div {
+		width: 100%;
+		max-width: 1140;
+		margin: 0 auto;
+		padding: auto;
+		margin: auto;
+	}
+	#body_div {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+		color: #372f2f;
+		#posts {
+			width: 52.5%;
+			line-height: 20px;
+			padding-top: 10px;
+			background-color: #f3f1f1;
+			border-radius: 0.5em;
+		}
+		#books {
+			float: right;
+			width: 30%;
+			padding-top: 20px;
+			padding: 25px;
+			background-color: #f3f1f1;
+			border-radius: 0.5em;
+			align-content: right;
+			text-align: center;
+		}
+	}
 }
 
 .clearfix:before, .clearfix:after {
@@ -27,25 +49,30 @@ body {
 	
 	#logo {
 		float: left;
+		padding-left: 35px;
 		a {
 			font-family: 'Pacifico', cursive;
 			text-transform: lowercase;
 			font-weight: 750;
 			letter-spacing: -1px;
-			font-size: 3.5rem;
+			font-size: 4rem;
 			color: #f25a5a;
 		}
 	}
 	#buttons {
 		float: right;
+		padding: auto;
+		padding-right: 25px;
 		a {
-				line-height: 60px;
+				line-height: 145px;
 				background: #f25a5a;
-				padding: .5em 1em;
-				border-radius: 0.2em;
+				padding: 1em 1.5em;
+				border-radius: 0.5em;
 				color: white;
 				text-decoration: none;
 				font-weight: 100;
+				font-size: 18px;
+
 			}
 		}
 	}	
@@ -57,20 +84,21 @@ body {
 	.post {
 			margin: 1em 0;
 			padding: 1em 0;
-			border-bottom: 1px solid #D1d1d1;
+			border-bottom: 3.5px solid #D1d1d1;
 			.title {
 				margin: 0;
 				a {
-					color: #397CAC;
+					color: #f25a5a;
 					text-decoration: none;
 					font-weight: 100;
-					font-size: 1.25rem;
+					font-size: 1.5rem;
 				}
 			}
-			.date {
-				margin-top: .25rem;
-				font-size: 0.9rem;
-				color: #B2BAC2;
+			.info {
+				color: #605252;
+				margin-top: 0.75rem; 
+				font-size: 0.85rem;
+				font-weight: 700;
 			}
 		}
 	}
@@ -90,19 +118,45 @@ body {
  	border-radius: .5em;
  	h1 {
 		font-weight: 100;
-		font-size: 2em;
-		color: #397CAC;
+		font-size: 1.75em;
+		color: #f14141;
 		margin-top: 0;
  	}
  	p {
-		font-size: 0.9em;
 		line-height: 1.5;
-		font-size: 100;
+		font-size: 1.1rem;
+		color: #372f2f;
+
  	}
+ 	.info {
+		color: #605252;
+		margin-top: 0.75rem; 
+		font-size: 0.85rem;
+		font-weight: 700;
+		border-bottom: 3.5px solid #d1d1d1;
+		padding-bottom: 1em;
+	}
+
+ 	.buttons {
+				
+				float: left;
+				font-size: 1em;
+				padding-bottom: 1em;
+				padding-top: .5em;
+				a {
+					color: #f25a5a;
+					border: 1px solid #d1d1d1;
+					padding: 1em;
+					border-radius: 0.2em;
+					text-decoration: none;
+					
+				}
+			}
+
  
  	#comments {
 		.comment {
-			border-bottom: 1px solid #d1d1d1;
+			border-bottom: 3.5px solid #d1d1d1;
 			padding-bottom: 1em;
 			margin-bottom: 1em;
 			.content {
@@ -116,7 +170,7 @@ body {
 				text-align: right;
 				padding-top: 1.5em;
 				a {
-					color: #f25a5a;
+					color: #f68888;
 					border: 1px solid #d1d1d1;
 					padding: .5em;
 					border-radius: 0.2em;
@@ -127,28 +181,37 @@ body {
 			.comment_content {
 				margin: 0;
 				padding: 0;
+				font-size: 1.1rem;
+				color: #1c1717;
 			}
-			.comment_author {
-				color: #397CAC;
+			.comment_info {
+				color: #605252;
 				margin-top: 0.5rem; 
-				font-size: 0.6rem;
+				font-size: 0.85rem;
 				font-weight: 700;
 			}
 		}
-		input[type="submit"] {
-   		background: #397CAC;
+	}
+	input[type="submit"] {
+   		background: #f68888;
    		border: none;
    		color: white;
    		font-weight: 100;
    		padding: .5em 1em;
    		border-radius: .2em;
- 		}
-  	textarea {
-   		width: 100%;
-   		min-height: 200px;
-   		border: 1px solid #d1d1d1;
-   		border-radius: .2em;
-   		margin: 1em 0;
+   		font-size: 14px;
+ 	}
+ 	string {
+   			width: 100%;
+   			border: 1px solid #d1d1d1;
+   			border-radius: .2em;
+   			margin: 1em 0;
   	}
-	}
+  	textarea {
+   			width: 100%;
+   			min-height: 200px;
+   			border: 1px solid #d1d1d1;
+   			border-radius: .2em;
+   			margin: 1em 0;
+  	}
 }

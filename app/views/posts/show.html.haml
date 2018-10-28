@@ -1,13 +1,18 @@
 #post_content
 	%h1= @post.title
-	%p= @post.content
+	%p.text= @post.content
+
+	%p.info
+		= @post.user.email
+		|
+		= time_ago_in_words(@post.updated_at)
+		ago
 
 	#comments
-		%h3
-			= @post.comments.count
-			Replies
 		= render @post.comments
 
+		%br/
+		
 		%h3 Reply to thread 
 		= render "comments/form"
 
@@ -15,5 +20,7 @@
 	%br/
 	%br/
 
-	= link_to "Edit", edit_post_path(@post)
-	= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do that?" }
+	.buttons
+		= link_to "Edit Initial Post", edit_post_path(@post)
+		= link_to "Delete Thread", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do that?" }
+ 
