@@ -1,0 +1,23 @@
+#post_content
+  %h2 Sign Up for Book Goals
+
+  = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = f.error_notification
+
+    = f.input :email,
+                label: "email",
+                required: true,
+                autofocus: true ,
+                input_html: { autocomplete: "email" }
+    = f.input :password,
+                required: true,
+                input_html: { autocomplete: "new-password" }
+    = f.input :password_confirmation,
+                label: "reenter password",
+                required: true,
+                input_html: { autocomplete: "new-password" }
+
+    = f.submit "Sign up"
+
+    #form_link
+      = link_to render "devise/shared/links"
