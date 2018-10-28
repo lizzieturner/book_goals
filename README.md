@@ -8,7 +8,9 @@ Book Goals is a forum site built with Ruby on Rails designed specifically for yo
 
 ## Tech
 
-Technologies Used Include: Ruby, Rails, HAML, SCSS, Devise, Simple Form, Heroku, and more...
+![stack](/app/assets/images/stack.png)
+
+Gems Installed Include: Devise, HAML, SCSS, PG, and Simple Form
 
 ## Usage
 
@@ -24,3 +26,8 @@ Then create a new thread using the "Create Thread" button or read an existing th
 
 ## Author
 Created and Maintained by Lizzie Turner [twitter](twitter.com/iamlizzieturner) // [email](mailto:hello@lizzieturner.com)
+
+## Acknowledgements
+Book Goals owes much debt to the tutorial "How to Build a Forum in Ruby".
+
+
